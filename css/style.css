@@ -1,0 +1,92 @@
+/* Global css */
+*{padding:0; margin:0; box-sizing:border-box; font-family: 'Nunito Sans', sans-serif;font-family: 'Poppins', sans-serif;scroll-behavior: smooth;}
+body{padding: 0;margin: 0;background: #fff;font-family: 'Nunito Sans', sans-serif;font-family: 'Poppins', sans-serif;}
+input, select, textarea , button{transition: all 0.5s ease;-webkit-transition: all 0.5s ease;}
+a {text-decoration:none;transition: all 0.5s ease;-webkit-transition: all 0.5s ease;outline:none;outline: 0;}
+a::after , a::before{text-decoration:none;transition: all 0.5s ease;-webkit-transition: all 0.5s ease;}
+a:hover , a:focus {text-decoration:none;}
+input {border: 0;outline: 0;}
+ul{margin:0;padding:0;list-style:none;}
+h1, h2, h3, h4, h5, h6 , p {margin: 0;}
+img{max-width:100%; height: auto;}
+.container{width: 100%;display: block;margin: 0 auto;max-width: 1400px!important;}
+/* /GLobal css */
+/* Header CSS */
+header{background: #fff;border-radius: 0px 0px 25px 0px;}
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.hd-left-col {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hd-right-col {
+    display: flex;
+    justify-content: end;
+    gap: 60px;
+    align-items: center;
+}
+.notification a {
+    padding: 0;
+}
+.notification .dropdown-toggle::after{display: none;}
+.notification img{width: 25px;}
+.user-info .nav-link{padding: 0;}
+ul{margin-bottom: 0!important;}
+.notification-num {
+    padding: 10px 8px;
+    border: 1px solid #548cd7;
+    border-radius: 100%;
+}
+.user-info {
+    padding: 12px 15px 12px 55px;
+    border: 1px solid #D0E4FF;
+    border-radius: 7px;
+    position: relative;
+}
+.user-info img {
+    width: 30px;
+    position: absolute;
+    left: -40px;
+    top: 0px;
+}
+.user-info .dropdown-toggle::after{display: none;}
+.nav-title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121;
+}
+body {
+    background: #EFF2FF!important;
+}
+.notification .dropdown-item{padding: .25rem 1.5rem;}
+.side-navbar {
+    width: 350px;
+    background: #fff;
+    border-radius: 0 0 35px 0;
+}
+.side-navbar li {
+    font-size: 19px;
+    padding: 15px 50px;
+    border-bottom: 1px solid #F9F7FF;
+    margin-left: 15px;
+}
+.side-navbar li:last-child{border-bottom:none;}
+li.active {
+    background: #eff2ff;
+    border-radius: 31px 0 0 31px;
+}
+
+/* Header CSS End */
+
+/* Responsive Css */
+@media (min-width:1601px) {
+	.container {
+		max-width: 83% !important
+	}
+}
