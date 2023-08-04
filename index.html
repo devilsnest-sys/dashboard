@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="nav-wrap">
@@ -79,17 +79,17 @@
                 <li class="sidebar-brand"><a id="menu-toggle" href="#"><span id="main_icon"
                             class="glyphicon glyphicon-align-justify"><img src="images/slider-icon.png"
                                 class="img-fluid rev-r" alt="Slider Icon"></span></a></li>
-                <li class="active">Dashboard</li>
-                <li>Complete KYC</li>
-                <li>Integration Kit</li>
-                <li>Product Catalog</li>
-                <li>Transaction History</li>
-                <li>Settlement Report</li>
-                <li>Refund Txn History</li>
-                <li>Chargeback Txn History</li>
-                <li>Transaction Enquiry</li>
-                <li>Transaction Summary</li>
-                <li>FAQs/Help</li>
+                <li class="active"><img src="images/dashboard-sp.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Dashboard <img src="images/dashboard-sp.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/kyc-sp.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Complete KYC<img src="images/kyc-sp.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/int-kit.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Integration Kit<img src="images/int-kit.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/prod-cat.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Product Catalog<img src="images/prod-cat.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/transaction-sp.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Transaction History<img src="images/transaction-sp.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/settle-sp.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Settlement Report<img src="images/settle-sp.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/refund.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Refund Txn History<img src="images/refund.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/charge-b.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Chargeback Txn History<img src="images/charge-b.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/transaction-eq.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Transaction Enquiry<img src="images/transaction-eq.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/transaction-sp.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">Transaction Summary<img src="images/transaction-sp.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
+                <li><a href="javascript:void(0)" class="on-act" role="button"><img src="images/faq.png" class="img-fluid icon-nav-sidebar" alt="Dashboard">FAQs/Help<img src="images/faq.png" class="img-fluid icon-nav-sidebar slide-active-icon" alt="Dashboard"></a></li>
             </ul>
         </div>
         <div id="page-content-wrapper">
@@ -102,10 +102,10 @@
                                 <div class="row">
                                     <div class="col-lg-12">
                                         <ul class="steps">
-                                            <li class="step "> Type </li>
-                                            <li class="step is-active"><span class="innr-dot"></span>My Issue</li>
-                                            <li class="step"><span class="innr-dot"></span>Where</li>
-                                            <li class="step"><span class="innr-dot"></span>Submit</li>
+                                            <li class="step is-active"> Pending </li>
+                                            <li class="step ">In Process</li>
+                                            <li class="step">Verified</li>
+                                            <li class="step">Approved</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -167,6 +167,28 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="charts-analyze mt-4">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-lg-7">
+                                            <div class="chart-col">
+                                                <div class="chart-title">Amount per Month</div>
+                                                <canvas id="barChart" class="w-100"></canvas>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="chart-col">
+                                                <div class="chart-title">Mode of transaction</div>
+                                                <div id="chart-area"><img src="images/chart1.PNG" class="img-fluid" alt=""></div>
+                                                <div class="legends">
+                                                    <div class="net-b">Net Banking</div>
+                                                    <div class="upi">UPI</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -177,8 +199,8 @@
 
 
 
-
-
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
