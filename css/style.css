@@ -82,7 +82,182 @@ li.active {
     border-radius: 31px 0 0 31px;
 }
 
+.sprite { background: url('../images/icon-sidebar.png') no-repeat top left; width: 57px; height: 57px;  } 
+.sprite.int-kit { background-position: 0 0; width: 50px; } 
+.sprite.kyc-sp { background-position: -60px 0; } 
+.sprite.prod-cat { background-position: -127px 0; width: 53px; height: 54px; } 
+.sprite.refund { background-position: -190px 0; width: 58px; } 
+.sprite.settle-sp { background-position: -258px 0; height: 55px; } 
+.sprite.transaction-eq { background-position: -325px 0; } 
+.sprite.transaction-sp { background-position: -392px 0; } 
+.sprite.tran-sum { background-position: -459px 0; height: 63px; } 
+.sprite.charge-b { background-position: -526px 0; width: 62px; } 
+.sprite.dashboard-sp { background-position: -598px 0; width: 56px; height: 56px; } 
+.sprite.faq { background-position: -664px 0; width: 58px; height: 58px; } 
+.sprite.faq { background-position: -732px 0; width: 58px; height: 58px; } 
+.sprite.int-kit { background-position: -800px 0; width: 50px; } 
+.sprite.kyc-sp { background-position: -860px 0; } 
+.sprite.prod-cat { background-position: -927px 0; width: 53px; height: 54px; } 
+.sprite.refund { background-position: -990px 0; width: 58px; } 
+.sprite.settle-sp { background-position: -1058px 0; height: 55px; } 
+.sprite.transaction-eq { background-position: -1125px 0; } 
+.sprite.transaction-sp { background-position: -1192px 0; } 
+.sprite.tran-sum { background-position: -1259px 0; height: 63px; } 
+.sprite.charge-b { background-position: -1326px 0; width: 62px; } 
+.sprite.dashboard-sp { background-position: -1398px 0; width: 56px; height: 56px; } 
 /* Header CSS End */
+#wrapper {
+    padding-left: 100px;
+    transition: all .4s ease 0s;
+    height: 100%;
+    overflow: hidden;
+}
+li.sidebar-brand {
+    position: absolute;
+    right: 0;
+}
+#sidebar-wrapper {
+    margin-left: -20%;
+    left: 70px;
+    width: 350px;
+    position: fixed;
+    height: 100%;
+    z-index: 10000;
+    transition: all .4s ease 0s;
+}
+
+.sidebar-nav {
+    display: block;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#page-content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+#wrapper.active {
+    padding-left: 375px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 20%;
+}
+
+#page-content-wrapper {
+  width: 100%;
+}
+.rev-r {
+    width: 10px;}
+.active .rev-r {
+    width: 10px;
+    transform: rotate(180deg);
+}
+h1.page-title {
+    font-size: 25px;
+    text-align: center;
+}
+.main-body {
+    padding: 30px;
+}
+.transaction-step img {
+    width: 40px;
+}
+
+.transaction-step {
+    background: url(../images/bg-orange.png) no-repeat;
+    background-size: 100%;
+    padding: 5%;
+    display: flex;
+    gap: 30px;
+}
+.transaction-step div{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.transaction-step {
+    background: url(../images/bg-orange.png) no-repeat;
+    background-size: 100%;
+    padding: 10% 5%;
+    display: flex;
+    gap: 30px;
+    border-radius: 8px;
+}
+.amt-stat {
+    font-size: 16px!important;
+    font-weight: 400!important;
+}
+.bg-blue{
+    background: url('../images/bg-blue.png') no-repeat;
+    background-size: 100%;
+}
+.bg-dblu{
+    background: url('../images/bg-dblu.png') no-repeat;
+    background-size: 100%;
+}
+.transaction-step.bg-lorng{
+    background: url('../images/bg-lorng.png') no-repeat;
+    background-size: 100%;
+}
+.bg-blue .img-wrap {
+    background: #3BA9ED;
+    padding: 2% 4%;
+    border-radius: 12px;
+}
+.bg-orng .img-wrap {
+    background: #FF9B29;
+    padding: 2% 4%;
+    border-radius: 12px;
+}
+.bg-dblu .img-wrap{
+    background: #5E7AD8;
+    padding: 2% 4%;
+    border-radius: 12px;
+}
+.bg-lorng .img-wrap {
+    background: #F7A83B;
+    padding: 2% 4%;
+    border-radius: 12px;
+}
+.all-transaction {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.all-transaction span {
+    font-size: 26px;
+    color: #383838;
+    font-weight: 600;
+}
+.all-transaction a {
+    font-size: 20px;
+}
+.all-transaction .btn-secondary {
+    background-color: #FFFFFF;
+    color: #222222;
+    border: 1px solid #E1E1E1;
+}
+@media (max-width:767px) {
+    #wrapper {
+    padding-left: 70px;
+    transition: all .4s ease 0s;
+}
+#sidebar-wrapper {
+    left: 70px;
+}
+#wrapper.active {
+    padding-left: 150px;
+}
+#wrapper.active #sidebar-wrapper {
+    left: 150px;
+    width: 150px;
+    transition: all .4s ease 0s;
+}
+}
 
 /* Responsive Css */
 @media (min-width:1601px) {

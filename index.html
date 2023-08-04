@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +10,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -30,30 +34,34 @@
                             <div class="notification">
                                 <ul>
                                     <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <span class="notification-num"><img src="images/notification-icon.png" class="img-fluid" alt="Notify"></span>
-                                    </a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Lorem</a>
-                                    <a class="dropdown-item" href="#">Ipsum</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Lorem</a>
-                                    </div>
-                                </li>
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="notification-num"><img src="images/notification-icon.png"
+                                                    class="img-fluid" alt="Notify"></span>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Lorem</a>
+                                            <a class="dropdown-item" href="#">Ipsum</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Lorem</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="user-info">
                                 <ul>
                                     <li class="nav-item dropdown">
                                         <img src="images/user-icon.png" class="img-fluid" alt="User Picture">
-                                    <a class="nav-link dropdown-toggle nav-title" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hello, Vikram</a>
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="#">Profile</a>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Logout</a>
-                                    </div>
-                                </li>
+                                        <a class="nav-link dropdown-toggle nav-title" href="#" id="navbarDropdown"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">Hello, Vikram</a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="#">Profile</a>
+                                            <a class="dropdown-item" href="#">Settings</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -62,25 +70,115 @@
             </div>
         </div>
     </header>
-    <div class="side-navbar">
-        <ul class="list-unstyled">
-            <li class="active">Dashboard</li>
-            <li>Complete KYC</li>
-            <li>Integration Kit</li>
-            <li>Product Catalog</li>
-            <li>Transaction History</li>
-            <li>Settlement Report</li>
-            <li>Refund Txn History</li>
-            <li>Chargeback Txn History</li>
-            <li>Transaction Enquiry</li>
-            <li>Transaction Summary</li>
-            <li>FAQs/Help</li>
-        </ul>
+
+
+
+    <div id="wrapper" class="active">
+        <div id="sidebar-wrapper">
+            <ul id="sidebar_menu" class="sidebar-nav side-navbar">
+                <li class="sidebar-brand"><a id="menu-toggle" href="#"><span id="main_icon"
+                            class="glyphicon glyphicon-align-justify"><img src="images/slider-icon.png"
+                                class="img-fluid rev-r" alt="Slider Icon"></span></a></li>
+                <li class="active">Dashboard</li>
+                <li>Complete KYC</li>
+                <li>Integration Kit</li>
+                <li>Product Catalog</li>
+                <li>Transaction History</li>
+                <li>Settlement Report</li>
+                <li>Refund Txn History</li>
+                <li>Chargeback Txn History</li>
+                <li>Transaction Enquiry</li>
+                <li>Transaction Summary</li>
+                <li>FAQs/Help</li>
+            </ul>
+        </div>
+        <div id="page-content-wrapper">
+            <div class="page-content inset">
+                <div class="row">
+                    <div class="col-md-12">
+                        <section class="main-body">
+                            <h1 class="page-title">KYC Status</h1>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <ul class="steps">
+                                            <li class="step "> Type </li>
+                                            <li class="step is-active"><span class="innr-dot"></span>My Issue</li>
+                                            <li class="step"><span class="innr-dot"></span>Where</li>
+                                            <li class="step"><span class="innr-dot"></span>Submit</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="all-transaction">
+                                            <span>All Transactions</span>
+                                            <div class="btns-wrap-filtr">
+                                                <a href="" class="btn btn-primary mr-4">Select Period</a>
+                                                <a href="" class="btn btn-secondary">Select Period</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="transaction-step bg-blue">
+                                            <span class="img-wrap">
+                                                <img src="images/trans-step.png" class="img-fluid" alt="Total Income">
+                                               </span>
+                                            <div class="txt-cont">
+                                                <div class="title-step">Total Income</div>
+                                                <div class="amt-stat">Rs. 250,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="transaction-step bg-orng">
+                                           <span class="img-wrap">
+                                            <img src="images/trans-step.png" class="img-fluid" alt="Total Income">
+                                           </span>
+                                            <div class="txt-cont">
+                                                <div class="title-step">Total Income</div>
+                                                <div class="amt-stat">Rs. 250,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="transaction-step bg-dblu">
+                                            <span class="img-wrap">
+                                                <img src="images/trans-step.png" class="img-fluid" alt="Total Income">
+                                               </span>
+                                            <div class="txt-cont">
+                                                <div class="title-step">Total Income</div>
+                                                <div class="amt-stat">Rs. 250,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="transaction-step bg-lorng">
+                                            <span class="img-wrap">
+                                                <img src="images/trans-step.png" class="img-fluid" alt="Total Income">
+                                               </span>
+                                            <div class="txt-cont">
+                                                <div class="title-step">Total Income</div>
+                                                <div class="amt-stat">Rs. 250,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
 
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -88,5 +186,7 @@
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
