@@ -4,7 +4,7 @@ $("#menu-toggle").click(function(e) {
 });
 function checkScreenSize() {
     var wrapperElement = $('#wrapper');
-    if ($(window).width() < 767) {
+    if ($(window).width() < 1024) {
         wrapperElement.removeClass('active');
     } else {
         wrapperElement.addClass('active');

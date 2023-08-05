@@ -370,12 +370,15 @@ h1.page-title {
         
 
 @media (min-width: 1024px) and (max-width: 1540px) {        
-    .transaction-step div{font-size: 12px;}
-    .amt-stat{font-size: 12px !important;}
+    .transaction-step div{font-size: 11px;}
+    .amt-stat{font-size: 10px !important;}
     .transaction-step img {width: 30px;}
+    .hd-left-col{width: 40%;}
     
     
-    
+}
+@media (min-width: 768px) and (max-width: 1024px) {    
+    .transaction-step{margin-bottom: 30px;}
 }
 @media (max-width:767px) {
     #page-content-wrapper{margin-top: 82px;}
