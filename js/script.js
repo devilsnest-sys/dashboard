@@ -19,14 +19,11 @@ $(window).resize(function() {
     checkScreenSize();
 });
 
-$(".on-act").on("click", function () {
-    $(this).addClass("active");
-});
 
 $(document).ready(function () {
     $(".on-act").on("click", function () {
-      $("li").removeClass("active");
-      $(this).parent().addClass("active");
+      $("li").removeClass("active-in");
+      $(this).parent().addClass("active-in");
     });
   });
 

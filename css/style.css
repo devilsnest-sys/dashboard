@@ -84,7 +84,7 @@ body {
     margin-left: 15px;
 }
 .side-navbar li:last-child{border-bottom:none;}
-li.active {
+li.active-in {
     background: #eff2ff;
     border-radius: 31px 0 0 31px;
 }
